@@ -129,7 +129,7 @@ a { text-decoration: none; }
 
 li { list-style: none; }
 
-img, ion-icon, a, button, time, span { display: block; }
+img, ion-icon, a, button, time, span { display: block; color:forestgreen; }
 
 button {
   font: inherit;
@@ -384,7 +384,7 @@ main {
 .info_more-btn:hover::before,
 .info_more-btn:focus::before { background: var(--bg-gradient-yellow-2); }
 
-.info_more-btn span { display: none; }
+.info_more-btn span { display: none; color:forestgreen; }
 
 .sidebar-info_more {
   opacity: 0;
@@ -796,9 +796,9 @@ main {
 }
 
 .timeline-list span {
-  color: var(--vegas-gold);
-  font-weight: var(--fw-400);
-  line-height: 1.6;
+    color: forestgreen;
+    font-weight: var(--fw-400);
+    line-height: 1.6;
 }
 
 .timeline-item:not(:last-child)::before {
@@ -1351,10 +1351,11 @@ textarea.form-input::-webkit-resizer { display: none; }
     padding: 10px 15px;
   }
 
-  .info_more-btn span {
-    display: block;
-    font-size: var(--fs-8);
-  }
+    .info_more-btn span {
+        display: block;
+        color: forestgreen;
+        font-size: var(--fs-8);
+    }
 
   .info_more-btn ion-icon { display: none; }
 
