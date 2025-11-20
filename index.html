@@ -5,11 +5,12 @@
 
         body{
             background-color:dimgray;
+            font-family: Arial, Helvetica, sans-serif;
         }
         .pollo {
-            background: linear-gradient(0deg, green, black);
+            background: linear-gradient(0deg, green, dimgrey);
             text-align: center;
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         }
 
         .pollos {
@@ -36,14 +37,8 @@
         table {
             background-color: red;
             color: white;
-            text-align: center
-        }
-        .default {
-            background: linear-gradient(90deg, magenta, cyan);
-        }
-
-        .longer {
-            background: linear-gradient(in oklch longer hue 0deg, magenta, cyan);
+            text-align: center;
+            align-self: center;
         }
         .Image1 {
             -webkit-mask-image: url(image/pollo.png);
@@ -64,9 +59,10 @@
             align-items:center;
             display:flex;
             justify-content:center;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
         }
         body{
-            color: darkseagreen
+            color: white;
         }
     </style>
     <meta charset="utf-8">
@@ -90,40 +86,22 @@
         <p>solo que no era cocido y no tenia patatas</p>
     </div>
     <main>
-        <section>
+        <section class="pollo">
             <h1>Bienvenido a mi portfolio</h1>
             <p>Soy un creador y animador de modelos y entornos y estos son unos de mis trabajos</p>
         </section>
         <article>
-            <h2>Proyecto destacados</h2>
+            <h2>Proyectos destacados</h2>
             <figure>
                 <img class="Image1" src="image/exterior2.jpg" alt="Entorno lago con perfume modelado">
                 <figcaption>Creacion y modelado de un entorno para una presentacion de un perfume ficticio</figcaption>
             </figure>
+            <figure>
+                <img src="image/personajeFinal.png" alt="turn arround del personaje antes de empezar la fase de modelado">
+                <figcaption>Creacion y modelado de un entorno para una presentacion de un perfume ficticio</figcaption>
+            </figure>
         </article>
     </main>
-    <table border="1">
-        <tr>
-            <th>Nombre</th>
-            <th>estado</th>
-            <th>genero</th>
-        </tr>
-        <tr>
-            <td>Black clover</td>
-            <td>Emision</td>
-            <td>shounen</td>
-        </tr>
-        <tr>
-            <td>Solo leveling</td>
-            <td>Terminado</td>
-            <td>shounen</td>
-        </tr>
-        <tr>
-            <td>The begining after the end</td>
-            <td>Emision</td>
-            <td>seinen</td>
-        </tr>
-    </table>
     <footer>
         <p>© 2025 – Sergio Barbero Caceres</p>
     </footer>
