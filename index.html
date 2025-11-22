@@ -26,11 +26,6 @@
             text-align: center;
             align-self: center;
         }
-        header {
-            display: flex;
-            justify-content: center;
-            background: linear-gradient(0deg, darkseagreen, green);
-        }
         .Image1 {
             -webkit-mask-image: url(image/pollo.png);
             mask-image: url(image/pollo.png);
@@ -54,10 +49,13 @@
             width: 100%;
             padding: 1rem;
         }
-
         .apartado {
             color: white;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: clamp(1rem, 1.5rem, 2rem);
+            display: flex;
+            align-items: center;
+            padding: 0 0.5rem;
         }
     </style>
     <meta charset="utf-8">
