@@ -1,12 +1,11 @@
 <html lang="es">
 <head>
-    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="../assets/style/style.css">
     <style>
         header {
-            align-items: center;
             display: flex;
             justify-content: center;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background: linear-gradient(0deg, darkseagreen, green);
         }
         .row {
             display: flex;
@@ -21,6 +20,21 @@
             max-width: 100%;
             height: auto;
         }
+        .menu {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            position: fixed;
+            top: 15px;
+            width: 100%;
+            padding: 1rem;
+        }
+
+        .apartado {
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
     </style>
     <title>Mi portfolio</title>
     <meta charset="utf-8">
@@ -30,12 +44,12 @@
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="Proyectos">Proyectos</a></li>
-                <li><a href="Sobre mi">Sobre mí</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
+            <div class="menu">
+                <div class="apartado"><a href="index.html">Inicio</a></div>
+                <div class="apartado"><a href="Proyectos">Proyectos</a></div>
+                <div class="apartado"><a href="Sobre mi">Sobre mí</a></div>
+                <div class="apartado"><a href="#">Contacto</a></div>
+            </div>
         </nav>
     </header>
     <main class="body">
