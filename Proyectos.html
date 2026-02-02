@@ -20,6 +20,18 @@
             margin-left: auto;
             margin-right: auto;
         }
+        @media (max-width: 800px){
+            #panel, .activado {
+                padding: auto;
+                text-align: center;
+                background-color:#5EDB1A ;
+                margin: auto;
+                cursor: pointer;
+            }
+            #panel {
+                display: none;
+            }
+        }
     </style>
     <title>Mi portfolio</title>
     <meta charset="utf-8">
@@ -27,12 +39,13 @@
     <meta name="author" content="tu conciencia">
 </head>
 <body>
-    <header>
-        <nav>
+    <header style="background: linear-gradient(0deg, white, #5EDB1A);">
+        <p class="activado;" onclick="myFunction()"> Menu </p>
+        <nav id="panel">
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="Proyectos">Proyectos</a></li>
-                <li><a href="Sobre mi">Sobre mí</a></li>
+                <li><a href="Sobre mi">Sobre mi</a></li>
             </ul>
         </nav>
     </header>
@@ -80,5 +93,17 @@
     <footer>
         <p>© 2025 – Sergio Barbero Caceres</p>
     </footer>
+    <script>
+        function myFunction(){
+            if(document.getElementById("panel").style.display == "block")
+            {
+                document.getElementById("panel").style.display = "none"
+            }
+            else
+            {
+                document.getElementById("panel").style.display = "block"
+            }
+        }
+    </script>
 </body>
 </html>
