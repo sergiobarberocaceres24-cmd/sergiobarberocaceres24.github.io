@@ -10,7 +10,7 @@
         }
         .polloso {
             background-color: white;
-            color: #5EDB1A
+            color: black
         }
         .Image1 {
             -webkit-mask-image: url(assets/image/pollo.png);
@@ -29,13 +29,19 @@
             #panel, .activado {
                 padding: auto;
                 text-align: center;
-                background-color:#5EDB1A ;
+                background-color:linear-gradient(0deg, white, #5EDB1A) ;
                 margin: auto;
                 cursor: pointer;
             }
             #panel {
                 display: none;
             }
+        @media (min-width: 800px){
+            .activado{
+                width: 100%;
+                height: auto;
+            }
+        }
         }
     </style>
     <meta charset="utf-8">
@@ -44,7 +50,7 @@
 </head>
 <body style="background-color:white; color: black;">
     <header style="background: linear-gradient(0deg, white, #5EDB1A);">
-        <p class="activado;" onclick="myFunction()"> Menu </p>
+        <p class="activado;" onclick="myFunction()" src="assets\image\Pngtreemenu label_8644127.png" alt="Menu"></p>
         <nav id="panel">
             <ul>
                 <li><a href="index.html">Inicio</a></li>
